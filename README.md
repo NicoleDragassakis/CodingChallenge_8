@@ -1,1 +1,2 @@
 # CodingChallenge_8
+This code will create an employee management system which will store employee information, department information, and calculate the total salary for the department, anf finally handle a bonus system based on performance for each employee.
