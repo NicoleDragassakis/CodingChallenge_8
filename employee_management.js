@@ -80,3 +80,40 @@ salesDepartmentBonus.addEmployee(employee1); //adding employee to employees arra
 salesDepartmentBonus.addEmployee(employee3);//adding employee to employees array and sales
 const totalSalaryBonus = salesDepartmentBonus.calculateTotalSalaryWithBonus();
 console.log(`Total Department Salary plus Bonus for ${salesDepartmentBonus.name}: $${totalSalaryBonus}`); // output total depaerment salary plus bonus for sales department is 179000
+
+//TASK FIVE
+console.log("TASK FIVE"); //added for better readability
+
+// Create departments
+
+const engineering = new DepartmentBonus("Engineering");
+
+const marketing = new DepartmentBonus("Marketing");
+
+
+// Create employees
+
+const alice = new Employee("Alice", 80000, "Developer", "Engineering");
+
+const bob = new Employee("Bob", 75000, "Designer", "Marketing");
+
+const charlie = new Manager("Charlie", 120000, "Engineering Manager", "Engineering", 20000);
+
+const diana = new Manager("Diana", 130000, "Marketing Manager", "Marketing", 25000);
+
+
+// Add employees to departments
+
+engineering.addEmployee(alice);
+engineering.addEmployee(charlie);
+marketing.addEmployee(bob);
+marketing.addEmployee(diana);
+
+
+
+// Calculate total salary for each department
+
+console.log(`Total salary for Engineering: $${engineering.getDepartmentSalary()}`);
+console.log(`Total salary with bonuses for Engineering: $${engineering.calculateTotalSalaryWithBonus()}`);
+console.log(`Total salary for Marketing: $${marketing.getDepartmentSalary()}`);
+console.log(`Total salary with bonuses for Marketing: $${marketing.calculateTotalSalaryWithBonus()}`);
